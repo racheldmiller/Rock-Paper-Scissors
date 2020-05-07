@@ -12,6 +12,8 @@ while player_wins < winning_score and computer_wins < winning_score:
     print("..........Scissors..........")
 
     player = input("Make your move: ").lower()
+    if player == "quit" or player == "q":
+        break
     rand_num = randint(0, 2)
     if rand_num == 0:
         computer = "rock"
